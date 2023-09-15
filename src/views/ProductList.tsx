@@ -1,4 +1,3 @@
-import React from "react";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/utils/mock";
 import { StaticImageData } from "next/image";
@@ -18,6 +17,7 @@ export default function ProductList() {
             title={p.name}
             price={p.price}
             photo={p.image as StaticImageData}
+            id={""}
           />
         ))}
 
